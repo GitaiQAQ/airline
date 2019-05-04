@@ -1,0 +1,31 @@
+[package]
+name = "wasm"
+version = "0.1.0"
+authors = ["Gitai <i@gitai.me>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+js-sys = "0.3.19"
+wasm-bindgen = "0.2.42"
+geojson = "0.15.0"
+serde_json = "*"
+lazy_static = "1.3.0"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  'CanvasRenderingContext2d',
+  'CanvasGradient',
+  'CssStyleDeclaration',
+  'Document',
+  'Element',
+  'EventTarget',
+  'HtmlCanvasElement',
+  'HtmlElement',
+  'MouseEvent',
+  'Node',
+  'Window',
+]
